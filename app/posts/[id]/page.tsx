@@ -20,7 +20,7 @@ export default async function Post({ params }: { params: { id: number } }) {
     return (
        <>
            {post.map((post) => (
-               <div key={post.id}>
+               <div key={post.id} className="text-center">
                    <h1>{post.title}</h1>
                    <p>{post.content}</p>
                </div>
