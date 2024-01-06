@@ -11,8 +11,22 @@ import {
   NavbarMenu,
 } from "@nextui-org/react";
 import {useState} from "react";
-export default function Header() {
+import {createClient} from "@/utils/supabase/client";
+import AuthButton from "@/components/AuthButton";
+
+async function checkAuthentication() {
+  try {
+    createClient();
+    return true;
+  } catch (e) {
+    console.error('Error al conectar con Supabase:', e);
+    return false;
+  }
+}
+
+export default async function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isSupabaseConnected  = await checkAuthentication();
 
   const menuItems = [
     "Profile",
@@ -54,6 +68,9 @@ export default function Header() {
               <Link color="foreground" href="/posts">
                 Artículos
               </Link>
+            </NavbarItem>
+            <NavbarItem>
+              {isSupabaseConnected && <AuthButton/>}
             </NavbarItem>
           </NavbarContent>
 

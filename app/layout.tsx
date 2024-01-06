@@ -2,6 +2,7 @@ import { GeistSans } from 'geist/font/sans'
 import './globals.css'
 import {Providers} from "@/app/providers";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -26,6 +27,7 @@ export default function RootLayout({
       <main className="min-h-screen p-20">
         {children}
       </main>
+          <Footer/>
       </Providers>
       </body>
     </html>
