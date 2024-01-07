@@ -19,6 +19,10 @@ export default function Header() {
     {
       'name': 'Artículos',
       'url': '/posts'
+    },
+    {
+      'name': 'Rem Converter',
+      'url': '/rem-converter'
     }
   ];
 

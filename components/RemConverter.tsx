@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-
+import { CopyBlock,dracula } from "react-code-blocks";
+import { MdCleaningServices } from "react-icons/md";
 const CssConverter: React.FC = () => {
     const [cssInput, setCssInput] = useState<string>('');
     const [convertedCss, setConvertedCss] = useState<string>('');
@@ -20,9 +21,13 @@ const CssConverter: React.FC = () => {
             return `${remValue}rem`;
         });
 
-        return remCss; 
+        return remCss;
     };
 
+    const clear = () => {
+        setCssInput('')
+        setConvertedCss('')
+    }
     return (
         <div className="min-h-screen flex flex-col items-center text-white">
             <h1 className="text-4xl font-bold text-blue-500 mb-8">
@@ -46,18 +51,29 @@ const CssConverter: React.FC = () => {
                             <p className="text-lg font-medium mb-2">
                                 Estilos convertidos a rem:
                             </p>
-                            <code className="text-sm bg-gray-700 p-4 rounded-lg block">
-                                {convertedCss}
-                            </code>
+                        <CopyBlock
+                            text={convertedCss}
+                            language={'css'}
+                            showLineNumbers={true}
+                            startingLineNumber={1}
+                            theme={dracula}
+                        />
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={"flex justify-between"}>
                     <button
                         onClick={convertToRem}
                         className="mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
                     >
-                        Convertir a rem
+                        Convert
+                    </button>
+                    <button
+                        onClick={clear}
+                        className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
+                    >
+                        <MdCleaningServices/>
+                        Clear
                     </button>
                 </div>
             </div>

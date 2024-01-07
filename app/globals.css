@@ -40,3 +40,15 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (min-width: 64em) {
+  .sc-gswONk.kneoe {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 18.75rem;
+  }
+
+  button[aria-label="Copy Code"] {
+    position: fixed;
+  }
+}
