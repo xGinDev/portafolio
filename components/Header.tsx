@@ -11,34 +11,15 @@ import {
   NavbarMenu,
 } from "@nextui-org/react";
 import {useState} from "react";
-import {createClient} from "@/utils/supabase/client";
-import AuthButton from "@/components/AuthButton";
+import ButtonsFloating from "@/components/ButtonsFloating";
 
-async function checkAuthentication() {
-  try {
-    createClient();
-    return true;
-  } catch (e) {
-    console.error('Error al conectar con Supabase:', e);
-    return false;
-  }
-}
-
-export default async function Header() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isSupabaseConnected  = await checkAuthentication();
-
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    {
+      'name': 'Artículos',
+      'url': '/posts'
+    }
   ];
 
   return (
@@ -64,39 +45,25 @@ export default async function Header() {
             <NavbarBrand>
               <DeployButton />
             </NavbarBrand>
-            <NavbarItem isActive>
-              <Link color="foreground" href="/posts">
-                Artículos
-              </Link>
-            </NavbarItem>
-            <NavbarItem>
-              {isSupabaseConnected && <AuthButton/>}
-            </NavbarItem>
+            {
+              menuItems.map((board, index) => (
+                  <NavbarItem key={index}>
+                    <Link href={`${board.url}`}>{board.name}</Link>
+                  </NavbarItem>
+              ))
+            }
           </NavbarContent>
-
-          <NavbarContent justify="end">
-            <NavbarItem className="hidden lg:flex">
-
-            </NavbarItem>
-          </NavbarContent>
-
           <NavbarMenu>
-            {menuItems.map((item, index) => (
-                <NavbarMenuItem key={`${item}-${index}`}>
-                  <Link
-                      className="w-full"
-                      color={
-                        index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-                      }
-                      href="#"
-                      size="lg"
-                  >
-                    {item}
-                  </Link>
-                </NavbarMenuItem>
-            ))}
+            {
+              menuItems.map((board, index) => (
+                  <NavbarItem key={index}>
+                    <Link href={`${board.url}`}>{board.name}</Link>
+                  </NavbarItem>
+              ))
+            }
           </NavbarMenu>
         </Navbar>
+        <ButtonsFloating/>
       </header>
   )
 }
