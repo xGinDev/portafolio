@@ -64,13 +64,13 @@ const CssConverter: React.FC = () => {
                 <div className={"flex justify-between"}>
                     <button
                         onClick={convertToRem}
-                        className="mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
+                        className="mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
                     >
                         Convert
                     </button>
                     <button
                         onClick={clear}
-                        className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
+                        className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
                     >
                         <MdCleaningServices/>
                         Clear

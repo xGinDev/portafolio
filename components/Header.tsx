@@ -1,5 +1,5 @@
 'use client'
-import DeployButton from "@/components/DeployButton";
+import Logo from "@/components/Logo";
 import {
   Navbar,
   NavbarBrand,
@@ -12,12 +12,13 @@ import {
 } from "@nextui-org/react";
 import {useState} from "react";
 import ButtonsFloating from "@/components/ButtonsFloating";
+import BackToTop from "@/components/BackToTop";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems = [
     {
-      'name': 'Artículos',
+      'name': 'Blog',
       'url': '/posts'
     },
     {
@@ -41,13 +42,13 @@ export default function Header() {
 
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
-              <DeployButton />
+              <Logo />
             </NavbarBrand>
           </NavbarContent>
 
           <NavbarContent className="hidden sm:flex gap-4" justify="center">
             <NavbarBrand>
-              <DeployButton />
+              <Logo />
             </NavbarBrand>
             {
               menuItems.map((board, index) => (
@@ -68,6 +69,7 @@ export default function Header() {
           </NavbarMenu>
         </Navbar>
         <ButtonsFloating/>
+        <BackToTop/>
       </header>
   )
 }
