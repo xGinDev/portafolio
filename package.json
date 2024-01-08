@@ -13,6 +13,7 @@
     "framer-motion": "^10.17.9",
     "geist": "^1.0.0",
     "next": "latest",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-code-blocks": "^0.1.5",

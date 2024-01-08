@@ -27,7 +27,7 @@ export default function Header() {
   ];
 
   return (
-      <header className="w-full bg-black border-b border-b-foreground/10 h-16 fixed z-10">
+      <header className="w-full border-b h-16 fixed z-10">
         <Navbar
             isBordered
             isMenuOpen={isMenuOpen}
@@ -52,7 +52,7 @@ export default function Header() {
             {
               menuItems.map((board, index) => (
                   <NavbarItem key={index}>
-                    <Link href={`${board.url}`}>{board.name}</Link>
+                    <Link href={`${board.url}`} className={"text-foreground"}>{board.name}</Link>
                   </NavbarItem>
               ))
             }
