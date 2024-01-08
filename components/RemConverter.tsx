@@ -34,7 +34,7 @@ const CssConverter: React.FC = () => {
                 CSS PX to REM Converter
             </h1>
             <div className="flex flex-col w-full px-8 ">
-                <div className={"flex md:flex-row w-full gap-6"}>
+                <div className={"flex flex-col md:flex-row w-full gap-6"}>
                     <div className="w-full md:w-1/2 p-6 mb-4 md:mb-0 bg-gray-800 rounded-lg shadow-md overflow-y-auto">
                         <label className="block mb-2 text-lg font-medium">
                             Pega tus estilos CSS aquí:

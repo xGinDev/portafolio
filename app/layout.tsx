@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="bg-background text-foreground">
       <Providers>
       <Header/>
-      <main className="min-h-screen p-20">
+      <main className="min-h-screen py-20 px-8">
         {children}
       </main>
           <Footer/>
