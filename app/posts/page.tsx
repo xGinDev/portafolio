@@ -30,7 +30,7 @@ export default async function Posts() {
 
     return (
         <>
-            <h1 className={"text-center font-bold text-xl lg:text-5xl tracking-wide"}>Blog para la comunidad</h1>
+            <h1 className={"text-center font-bold text-xl lg:text-5xl tracking-wide"}>Blog</h1>
             <div className="grid divide-y lg:px-8">
                 {posts?.map((post) => (
                     <Link href={`/posts/${encodeURIComponent(`${post.id}`)}`} key={post.id}>
