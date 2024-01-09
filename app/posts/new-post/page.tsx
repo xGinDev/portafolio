@@ -23,18 +23,21 @@ export default function NewPost() {
             .single()
             .then(({ data, error }) => {
                 if (error) throw error;
-                return data;
+                return {data, error};
             });
     };
 
     const handleSubmit = () => {
         console.log("Creado");
-        createPost().then((data) => {
-            console.log("Post created:", data);
-        }).catch((error: any) => {
-            console.error("Error creating post:", error);
+        createPost().then((result) => {
+            if (result.error) {
+                console.error("Error creating post:", result.error);
+            } else {
+                console.log("Post created:", result.data);
+            }
         });
     };
+
 
     return (
         <div className={"flex flex-col justify-center items-center"}>
@@ -45,9 +48,8 @@ export default function NewPost() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
-            <Input
-                type={"textarea"}
-                label={"Description"}
+            <textarea
+                rows={20}
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
             />
