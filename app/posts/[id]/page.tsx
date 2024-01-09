@@ -20,7 +20,7 @@ export default async function Post({ params }: { params: { id: number } }) {
     return (
        <>
            {post.map((post) => (
-               <div key={post.id} className="text-center">
+               <div key={post.id} className="flex flex-col justify-center items-center text-center">
                    <h1>{post.title}</h1>
                    <Markdown>{post.content}</Markdown>
                </div>

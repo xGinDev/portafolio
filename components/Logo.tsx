@@ -7,8 +7,6 @@ import {useEffect, useState} from "react";
 export default function Logo() {
   const [mounted, setMounted] = useState(false);
   const { theme} = useTheme();
-  console.log('Theme', theme)
-
 
   useEffect(() => {
     setMounted(true);
