@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { CopyBlock,dracula } from "react-code-blocks";
 import { MdCleaningServices } from "react-icons/md";
+import {Button, button} from "@nextui-org/react";
+
 const CssConverter: React.FC = () => {
     const [cssInput, setCssInput] = useState<string>('');
     const [convertedCss, setConvertedCss] = useState<string>('');
@@ -16,9 +18,9 @@ const CssConverter: React.FC = () => {
     };
 
     const convertCssToRem = (cssString: string): string => {
-        const remCss = cssString.replace(/(\d+)px/g, (_, value) => {
+        const remCss = cssString.replace(/(\d*\.?\d+)px/g, (_, value) => {
             const remValue = parseFloat(value) / 16; // Ajusta según tu base de font-size
-            return `${remValue}rem`;
+            return remValue % 1 === 0 ? `${remValue.toFixed(0)}rem` : `${remValue.toFixed(3)}rem`;
         });
 
         return remCss;
@@ -62,19 +64,16 @@ const CssConverter: React.FC = () => {
                     </div>
                 </div>
                 <div className={"flex justify-between"}>
-                    <button
+                    <Button
                         onClick={convertToRem}
-                        className="mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
-                    >
-                        Convert
-                    </button>
-                    <button
+                        className="mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8">Convert</Button>
+                    <Button
                         onClick={clear}
                         className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
                     >
                         <MdCleaningServices/>
                         Clear
-                    </button>
+                    </Button>
                 </div>
             </div>
         </div>
