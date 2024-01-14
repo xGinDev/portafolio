@@ -27,7 +27,7 @@ export default function RootLayout({
       <Providers>
           <main>
               <div className="flex flex-row h-screen">
-                  <div className="absolute p-8 lg:relative w-0 -left-[280px] lg:w-[420px] !lg:left-0 lg:left-0 transition-all top-0 h-screen flex flex-col items-center ml-0 bg-background/70">
+                  <div className="absolute p-8 lg:relative w-0 -left-[280px] lg:w-[420px] !lg:left-0 lg:left-0 transition-all top-0 h-screen flex flex-col items-center ml-0 bg-secondary">
                       <Image
                           isZoomed
                           width={240}

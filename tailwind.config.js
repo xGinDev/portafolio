@@ -14,14 +14,16 @@ module.exports = {
         colors: {
           background: '#fff',
           foreground: '#000',
-          primary: '#09AACD'
+          primary: '#09AACD',
+          secondary: '#C1D0DD'
         }
       },
       dark: {
         colors: {
           background: '#000',
           foreground: '#fff',
-          primary: '#09AACD'
+          primary: '#09AACD',
+          secondary: '#C1D0DD'
         }
       }
     }

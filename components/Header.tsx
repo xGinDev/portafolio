@@ -33,6 +33,7 @@ export default function Header() {
             isBordered
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
+            className={'justify-start'}
         >
           <NavbarContent className="sm:hidden" justify="start">
             <NavbarMenuToggle
