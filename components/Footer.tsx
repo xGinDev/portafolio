@@ -1,7 +1,10 @@
+import Newsletter from "@/components/Newsletter";
+
 export default function Footer(){
     return (
-        <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
-            <p>
+        <footer className="flex flex-col w-full">
+            {/*<Newsletter/>*/}
+            <p className={"border-t border-t-foreground/10 p-4 flex justify-center text-center text-xs"}>
                 Powered by{' '}
                 <a
                     href="https://github.com/xGinDev"
