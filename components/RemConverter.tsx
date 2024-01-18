@@ -1,12 +1,15 @@
 'use client'
 import React, { useState } from 'react';
-import { CopyBlock,dracula } from "react-code-blocks";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { MdCleaningServices } from "react-icons/md";
-import {Button, button} from "@nextui-org/react";
+import { BsClipboard2, BsClipboard2Check } from "react-icons/bs";
+import {Button } from "@nextui-org/react";
 
 const CssConverter: React.FC = () => {
     const [cssInput, setCssInput] = useState<string>('');
     const [convertedCss, setConvertedCss] = useState<string>('');
+    const [copyCode, setCopyCode] = useState(false)
 
     const convertToRem = () => {
         try {
@@ -30,6 +33,15 @@ const CssConverter: React.FC = () => {
         setCssInput('')
         setConvertedCss('')
     }
+
+    const handleCopyCode = () => {
+        navigator.clipboard.writeText(convertedCss)
+        setCopyCode(true)
+        setTimeout(() => {
+            setCopyCode(false)
+        }, 3000)
+    }
+
     return (
         <div className="min-h-screen flex flex-col justify-center items-center text-white">
             <h1 className="text-4xl font-bold text-blue-500 mb-8">
@@ -53,13 +65,14 @@ const CssConverter: React.FC = () => {
                             <p className="text-lg font-medium mb-2">
                                 Estilos convertidos a rem:
                             </p>
-                        <CopyBlock
-                            text={convertedCss}
-                            language={'css'}
-                            showLineNumbers={true}
-                            startingLineNumber={1}
-                            theme={dracula}
-                        />
+                        <SyntaxHighlighter language="css" style={atomOneDark} customStyle={{
+                            padding: "8px",
+                            overflow: "hidden",
+                            height: "18.75rem",
+                            overflowY: "scroll"
+                        }} wrapLongLines={true} showLineNumbers={true}>
+                            {convertedCss}
+                        </SyntaxHighlighter>
                         </div>
                     </div>
                 </div>
@@ -67,13 +80,33 @@ const CssConverter: React.FC = () => {
                     <Button
                         onClick={convertToRem}
                         className="mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8">Convert</Button>
-                    <Button
-                        onClick={clear}
-                        className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
-                    >
-                        <MdCleaningServices/>
-                        Clear
-                    </Button>
+                    <div className="flex gap-4">
+                        <Button
+                            onClick={clear}
+                            className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
+                        >
+                            <MdCleaningServices/>
+                            Clear
+                        </Button>
+                        {
+                            !copyCode ? (
+                                <Button
+                                    onClick={() => {handleCopyCode()}}
+                                    className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
+                                >
+                                    <BsClipboard2/>
+                                    Copy
+                                </Button>
+                            ): (
+                                <Button
+                                    className="flex items-center gap-3 mt-4 p-2 bg-blue-500 text-white hover:bg-blue-700 rounded-full px-8"
+                                >
+                                    <BsClipboard2Check/>
+                                    Copied!
+                                </Button>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </div>
