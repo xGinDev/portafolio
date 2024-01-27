@@ -3,6 +3,7 @@ import './globals.css'
 import {Providers} from "@/app/providers";
 import Header from "@/components/Header";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -41,6 +42,7 @@ export default function RootLayout({
                       <div className="min-h-screen pt-24 px-8 lg:px-0">
                           {children}
                           <SpeedInsights />
+                          <Analytics />
                       </div>
                       {/*<Footer/>*/}
                   </div>
