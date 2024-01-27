@@ -43,7 +43,7 @@ export default function RootLayout({
                       <div className="min-h-screen pt-24 px-8 lg:px-0">
                           {children}
                       </div>
-                      <Footer/>
+                      {/*<Footer/>*/}
                   </div>
               </div>
           </main>
