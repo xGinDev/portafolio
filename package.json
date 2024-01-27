@@ -10,6 +10,7 @@
     "@nextui-org/table": "^2.0.28",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
+    "@vercel/analytics": "^1.1.2",
     "autoprefixer": "10.4.15",
     "framer-motion": "^11.0.3",
     "geist": "^1.0.0",
