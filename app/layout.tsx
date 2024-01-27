@@ -2,9 +2,7 @@ import { GeistSans } from 'geist/font/sans'
 import './globals.css'
 import {Providers} from "@/app/providers";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import {Image} from "@nextui-org/react";
-import Profile from '../public/profile.png'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -42,6 +40,7 @@ export default function RootLayout({
                       <Header/>
                       <div className="min-h-screen pt-24 px-8 lg:px-0">
                           {children}
+                          <SpeedInsights />
                       </div>
                       {/*<Footer/>*/}
                   </div>
