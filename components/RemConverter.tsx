@@ -43,7 +43,7 @@ const CssConverter: React.FC = () => {
     }
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center text-white">
+        <div className="min-h-screen flex flex-col items-center text-white">
             <h1 className="text-4xl font-bold text-blue-500 mb-8">
                 CSS PX to REM Converter
             </h1>

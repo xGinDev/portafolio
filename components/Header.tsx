@@ -24,6 +24,10 @@ export default function Header() {
     {
       'name': 'Rem Converter',
       'url': '/rem-converter'
+    },
+    {
+      'name': 'VTEX Extension',
+      'url': '/vtex-extension'
     }
   ];
 
