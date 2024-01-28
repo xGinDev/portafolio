@@ -1,9 +1,44 @@
 'use client'
 import {FC} from "react";
-import {Button, Image, Link, Table, TableHeader, TableBody, TableColumn, TableRow, TableCell} from "@nextui-org/react";
-import {Tooltip} from "@nextui-org/tooltip";
+import {
+    Button,
+    Image,
+    Link,
+    Table,
+    TableHeader,
+    TableBody,
+    TableColumn,
+    TableRow,
+    TableCell,
+    Modal,
+    ModalContent,
+    useDisclosure,
+    ModalBody
+} from "@nextui-org/react";
 
 const VTEXExtension: FC = () => {
+
+    const renderModal = (image: string) => {
+        const { isOpen, onOpen, onClose } = useDisclosure();
+
+        const handleOpenModal = () => {
+            onOpen();
+        };
+
+        return (
+            <>
+                <Button onPress={handleOpenModal}>Preview</Button>
+                <Modal size={'5xl'} isOpen={isOpen} onClose={onClose}>
+                    <ModalContent>
+                        <ModalBody>
+                            <Image src={image} />
+                        </ModalBody>
+                    </ModalContent>
+                </Modal>
+            </>
+        );
+    };
+
     const itemsAnalytics = [
         {
             'url': 'https://img.shields.io/vscode-marketplace/r/xgindev.vtex-snippet-io.svg?style=flat-square'
@@ -48,6 +83,21 @@ const VTEXExtension: FC = () => {
             'command': 'carrousel',
             'component': 'Context Image List And Slider',
             'image': 'https://github.com/xGinDev/vtex-snippets/assets/57797652/23b0044d-63b2-4d0a-b282-5d3b257a2ba2'
+        },
+        {
+            'command': 'srpdp',
+            'component': 'Shelf Related PDP',
+            'image': 'https://github.com/xGinDev/vtex-snippets/assets/57797652/bb19d1f1-d5c7-43c8-9b5b-00b5e0f38f7e'
+        },
+        {
+            'command': 'ssm',
+            'component': 'Share Social Media',
+            'image': 'https://github.com/xGinDev/vtex-snippets/assets/57797652/81c4338b-20a2-4dc5-993c-810c6954e935'
+        },
+        {
+            'command': 'bc',
+            'component': 'BreadCrumb Custom',
+            'image': 'https://github.com/xGinDev/vtex-snippets/assets/57797652/02db119c-8648-4c7b-b556-b7ac7a82faa0'
         }
     ]
 
@@ -106,8 +156,7 @@ const VTEXExtension: FC = () => {
                                         <TableRow key={index}>
                                             <TableCell>{command.command}</TableCell>
                                             <TableCell>{command.component}</TableCell>
-                                            <TableCell>
-                                                <Tooltip content={<Image src={`${command.image}`}/>}><Button>Hover me</Button></Tooltip></TableCell>
+                                            <TableCell>{renderModal(command.image)}</TableCell>
                                         </TableRow>
                                     ))
                                 }
