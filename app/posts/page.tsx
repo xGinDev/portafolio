@@ -2,6 +2,11 @@ import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
 import Link from "next/link";
 
+export const metadata = {
+    title: 'Blog',
+    description: '',
+}
+
 interface Post {
     id: number;
     title: string;
