@@ -3,6 +3,7 @@ import './globals.css'
 import { Providers } from "@/app/providers";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+import Header from '@/components/Header/Header';
 
 const defaultUrl = process.env.VERCEL_URL
   ? 'https://portafolio-xgindev.vercel.app/'
@@ -23,7 +24,8 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
         <Providers>
-          <main>
+          <Header />
+          <main className='flex max-w-7xl m-auto'>
             <div className="flex flex-row h-screen">
               <div className="w-full min-h-screen transition-all ease-out overflow-auto lg:ml-0">
                 <div className="min-h-screen">
