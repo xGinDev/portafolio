@@ -26,7 +26,7 @@ export default function RootLayout({
           <main>
             <div className="flex flex-row h-screen">
               <div className="w-full min-h-screen transition-all ease-out overflow-auto lg:ml-0">
-                <div className="min-h-screen pt-24 px-8 lg:px-0">
+                <div className="min-h-screen">
                   {children}
                   <SpeedInsights />
                   <Analytics />
