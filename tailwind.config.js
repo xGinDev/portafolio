@@ -15,7 +15,8 @@ module.exports = {
           background: '#fff',
           foreground: '#111',
           primary: '#09AACD',
-          secondary: '#C1D0DD'
+          secondary: '#C1D0DD',
+          gray: '#777'
         }
       },
       dark: {
@@ -23,7 +24,8 @@ module.exports = {
           background: '#111',
           foreground: '#fff',
           primary: '#09AACD',
-          secondary: '#C1D0DD'
+          secondary: '#C1D0DD',
+          gray: '#777'
         }
       }
     }

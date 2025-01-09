@@ -17,9 +17,9 @@ const HeroMain = () => {
     const additionalText = "I am a developer based in Colombia - Medellín, focused on creating interactive digital experiences on the web.";
 
     return (
-        <div className="w-full px-4">
-            <div className="flex flex-col justify-center pt-10">
-                <div className={`flex flex-wrap uppercase text-[36vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw]  ${bebas.className}`}>
+        <div className="w-full pt-12 lg:px-8">
+            <div className="flex flex-col justify-center">
+                <div className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw]  ${bebas.className}`}>
                     {text.split("").map((char, index) => (
                         <span
                             key={index}
@@ -29,8 +29,8 @@ const HeroMain = () => {
                         </span>
                     ))}
                 </div>
-                <div className="flex flex-wrap items-start gap-8">
-                    <div className={`flex flex-wrap uppercase text-[36vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw] ${bebas.className}`}>
+                <div className="flex flex-wrap items-start gap-8 border-b-2 border-gray pb-16">
+                    <div className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw] ${bebas.className}`}>
                         {text2.split("").map((char, index) => (
                             <span
                                 key={index}
