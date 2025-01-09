@@ -4,6 +4,7 @@ import { Providers } from "@/app/providers";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const defaultUrl = process.env.VERCEL_URL
   ? 'https://portafolio-xgindev.vercel.app/'
@@ -32,6 +33,7 @@ export default function RootLayout({
               <Analytics />
             </div>
           </div>
+          <Footer />
         </Providers>
       </body>
     </html>

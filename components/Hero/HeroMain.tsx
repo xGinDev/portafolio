@@ -40,7 +40,7 @@ const HeroMain = () => {
                             </span>
                         ))}
                     </div>
-                    <div className={`flex flex-col justify-between gap-y-28 lg:text-xl text-gray-700 lg:max-w-[20%] text-white ${popins.className}`}>
+                    <div className={`flex flex-col justify-between gap-y-28 lg:text-xl text-gray-700 lg:max-w-[20%] ${popins.className}`}>
                         <div>
                             <p><b className={`uppercase text-sm ${popins.className}`}>About</b> {additionalText}</p>
                         </div>
