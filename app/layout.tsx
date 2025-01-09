@@ -25,17 +25,13 @@ export default function RootLayout({
       <body className="bg-background text-foreground">
         <Providers>
           <Header />
-          <main className='flex max-w-7xl m-auto'>
-            <div className="flex flex-row h-screen">
-              <div className="w-full min-h-screen transition-all ease-out overflow-auto lg:ml-0">
-                <div className="min-h-screen">
-                  {children}
-                  <SpeedInsights />
-                  <Analytics />
-                </div>
-              </div>
+          <div className="w-full min-h-screen transition-all ease-out overflow-auto lg:ml-0">
+            <div className="min-h-screen">
+              {children}
+              <SpeedInsights />
+              <Analytics />
             </div>
-          </main>
+          </div>
         </Providers>
       </body>
     </html>
