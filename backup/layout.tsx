@@ -1,25 +1,26 @@
-import { GeistSans } from 'geist/font/sans'
-import './globals.css'
+import { GeistSans } from "geist/font/sans";
+import "./globals.css";
 import { Providers } from "@/app/providers";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from '@vercel/analytics/react';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const defaultUrl = process.env.VERCEL_URL
-  ? 'https://portafolio-xgindev.vercel.app/'
-  : 'http://localhost:3000'
+  ? "https://portafolio-xgindev.vercel.app/"
+  : "http://localhost:3000";
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: 'xGinDev | Portafolio',
-  description: 'Embárquese en mi apasionante viaje de desarrollo. Acelera tu ritmo con nuestras herramientas innovadoras y sabiduría experta. Únete a mi comunidad vibrante. Tu viaje digital comienza aquí conmigo.',
-}
+  title: "xGinDev | Portafolio",
+  description:
+    "Embárquese en mi apasionante viaje de desarrollo. Acelera tu ritmo con nuestras herramientas innovadoras y sabiduría experta. Únete a mi comunidad vibrante. Tu viaje digital comienza aquí conmigo.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
@@ -37,5 +38,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  )
+  );
 }
