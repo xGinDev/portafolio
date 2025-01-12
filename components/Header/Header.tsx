@@ -1,12 +1,10 @@
-import React from 'react'
-import ButtonsFloating from '../Global/ButtonsFloating'
+"use client";
+
+import React from "react";
+import ButtonsFloating from "../Global/ButtonsFloating";
 
 const Header = () => {
-    return (
-        <div>
-            <ButtonsFloating />
-        </div>
-    )
-}
+  return <ButtonsFloating />;
+};
 
-export default Header
+export default Header;
