@@ -2,6 +2,7 @@
 import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
 import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import LanguajeSwitcher from "./LanguajeSwitcher";
 
 export default function ButtonsFloating() {
   return (
@@ -17,6 +18,7 @@ export default function ButtonsFloating() {
         <TbBrandGithub size={24} />
       </Link>
       <ThemeSwitcher />
+      <LanguajeSwitcher />
     </div>
   );
 }
