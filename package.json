@@ -42,5 +42,11 @@
     "@types/react-dom": "18.2.5",
     "@types/react-syntax-highlighter": "^15.5.11",
     "encoding": "^0.1.13"
-  }
+  },
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xGinDev/portafolio.git",
+  "author": "xGinDev <jecl2912@gmail.com>",
+  "license": "MIT"
 }
