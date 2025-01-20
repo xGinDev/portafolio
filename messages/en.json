@@ -1,8 +1,10 @@
 {
   "Languajes": {
     "title": "Languajes",
-    "spanish": "Spanish",
-    "english": "English"
+    "options": {
+      "spanish": "Spanish",
+      "english": "English"
+    }
   },
   "Hero": {
     "titleDescription": "About",

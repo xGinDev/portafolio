@@ -17,8 +17,6 @@ const HeroMain = () => {
 
   const text = "front —— end";
   const text2 = "developer";
-  const additionalText =
-    "I am a developer based in Colombia - Medellín, focused on creating interactive digital experiences on the web.";
 
   return (
     <div className="w-full pt-12 lg:px-8">
@@ -60,7 +58,7 @@ const HeroMain = () => {
                 <b className={`uppercase text-sm ${popins.className}`}>
                   {translation("titleDescription")}
                 </b>{" "}
-                {additionalText}
+                {translation("about")}
               </p>
             </div>
             <div className="hidden lg:flex">
