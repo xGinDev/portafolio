@@ -1,6 +1,7 @@
 import React from "react";
 import { Bebas_Neue, Poppins } from "next/font/google";
 import { useTranslations } from "next-intl";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -22,7 +23,7 @@ const HeroMain = () => {
     <div className="w-full pt-12 lg:px-8">
       <div className="flex flex-col justify-center">
         <div
-          className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw]  ${bebas.className}`}
+          className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[20vw] lg:leading-[18vw]  ${bebas.className}`}
         >
           {text.split("").map((char, index) => (
             <span
@@ -51,7 +52,7 @@ const HeroMain = () => {
             ))}
           </div>
           <div
-            className={`flex flex-col justify-between gap-y-28 lg:text-xl text-gray-700 lg:max-w-[20%] ${popins.className}`}
+            className={`flex flex-col justify-between gap-y-8 lg:text-xl text-gray-700 lg:max-w-[20%] ${popins.className}`}
           >
             <div>
               <p>
@@ -61,8 +62,9 @@ const HeroMain = () => {
                 {translation("about")}
               </p>
             </div>
-            <div className="hidden lg:flex">
-              <p>Scroll down</p>
+            <div className="hidden lg:flex items-center justify-between">
+              <p>{translation("scrollDown")}</p>
+              <AiOutlineArrowDown className="animate-bounce "/>
             </div>
           </div>
         </div>

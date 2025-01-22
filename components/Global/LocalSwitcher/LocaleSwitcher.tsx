@@ -3,14 +3,13 @@ import { routing } from "@/i18n/routing";
 import LocaleSwitcherSelect from "./LocaleSwitcherSelect";
 
 export default function LocaleSwitcher() {
-  const t = useTranslations("Languajes");
-  const locale = useLocale();
+  const locale = useLocale();  
 
   return (
-    <LocaleSwitcherSelect defaultValue={locale} label={t("title")}>
+    <LocaleSwitcherSelect defaultValue={locale} label={"title"}>
       {routing.locales.map((cur) => (
-        <option key={cur} value={cur}>
-          Hola
+        <option key={cur} value={cur} className="capitalize">
+          {cur}
         </option>
       ))}
     </LocaleSwitcherSelect>
