@@ -8,14 +8,20 @@
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@nextui-org/table": "^2.0.28",
-    "@supabase/ssr": "latest",
-    "@supabase/supabase-js": "latest",
+    "@radix-ui/react-popover": "^1.1.4",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.47.12",
     "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.8",
     "autoprefixer": "10.4.15",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.0.3",
     "geist": "^1.0.0",
-    "next": "latest",
+    "lucide-react": "^0.471.0",
+    "motion": "^11.15.0",
+    "next": "^15.1.4",
+    "next-intl": "^3.26.3",
     "next-seo": "^6.4.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.29",
@@ -25,7 +31,9 @@
     "react-icons": "^4.12.0",
     "react-markdown": "^9.0.1",
     "react-syntax-highlighter": "^15.5.0",
+    "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.1.3"
   },
   "devDependencies": {
@@ -34,5 +42,11 @@
     "@types/react-dom": "18.2.5",
     "@types/react-syntax-highlighter": "^15.5.11",
     "encoding": "^0.1.13"
-  }
+  },
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xGinDev/portafolio.git",
+  "author": "xGinDev <jecl2912@gmail.com>",
+  "license": "MIT"
 }

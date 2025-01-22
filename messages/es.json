@@ -1,0 +1,10 @@
+{
+  "Hero": {
+    "titleDescription": "Acerca de mi",
+    "about": "Soy un desarrollador based en Colombia - Medellín, enfocado en crear experiencias digitales interactivas.",
+    "scrollDown": "Desliza hacia abajo"
+  },
+  "AboutPage": {
+    "title": "Acerca de mi"
+  }
+}
