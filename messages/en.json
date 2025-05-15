@@ -6,5 +6,9 @@
   },
   "AboutPage": {
     "title": "About"
+  },
+  "Projects": {
+    "title": "Projects in which I have participated",
+    "view": "View"
   }
 }

@@ -20,10 +20,10 @@ const HeroMain = () => {
   const text2 = "developer";
 
   return (
-    <div className="w-full pt-12 lg:px-8">
+    <div className="w-full pt-12 lg:p-0">
       <div className="flex flex-col justify-center">
         <div
-          className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[20vw] lg:leading-[18vw]  ${bebas.className}`}
+          className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[19vw] lg:leading-[18vw] md:justify-center  ${bebas.className}`}
         >
           {text.split("").map((char, index) => (
             <span
@@ -36,9 +36,9 @@ const HeroMain = () => {
             </span>
           ))}
         </div>
-        <div className="flex flex-wrap items-start gap-8 border-b-2 border-gray pb-16">
+        <div className="flex flex-wrap items-start gap-8 border-b-2 border-gray pb-16 md:justify-center">
           <div
-            className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[21vw] lg:leading-[18vw] ${bebas.className}`}
+            className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[19vw] lg:leading-[18vw] ${bebas.className}`}
           >
             {text2.split("").map((char, index) => (
               <span
