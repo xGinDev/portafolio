@@ -12,4 +12,19 @@ export const projects = [
     image: flexi,
     link: "https://www.flexicolombia.com/",
   },
+  {
+    title: "Flexi Colombia",
+    image: flexi,
+    link: "https://www.flexicolombia.com/",
+  },
+  {
+    title: "Flexi Colombia",
+    image: flexi,
+    link: "https://www.flexicolombia.com/",
+  },
+  {
+    title: "Flexi Colombia",
+    image: flexi,
+    link: "https://www.flexicolombia.com/",
+  },
 ];
