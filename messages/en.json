@@ -13,5 +13,30 @@
   },
   "Skills": {
     "title": "Skills"
+  },
+  "About": {
+    "title": "Digital Craftsmanship",
+    "description": "Frontend specialist merging technical expertise with design sensibility. I transform complex requirements into intuitive interfaces using React ecosystem, with a focus on performance and accessibility.",
+    "detail1": "3+ years shaping digital experiences",
+    "detail2": "VTEX & Shopify certified expert",
+    "detail3": "Mobile-first & responsive design advocate",
+    "detail4": "Active open-source contributor"
+  },
+  "Experience": {
+    "title": "Path",
+    "items": {
+      "infracommerce": {
+        "year": "2025-Present",
+        "role": "Frontend Developer",
+        "company": "Infracommerce",
+        "achievements": []
+      },
+      "blacksip": {
+        "year": "2021-2025",
+        "role": "Frontend Developer",
+        "company": "Blacksip",
+        "achievements": []
+      }
+    }
   }
 }

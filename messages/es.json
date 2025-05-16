@@ -13,5 +13,30 @@
   },
   "Skills": {
     "title": "Habilidades"
+  },
+  "About": {
+    "title": "Artesanía Digital",
+    "description": "Especialista frontend que fusiona expertise técnico con sensibilidad de diseño. Transformo requerimientos complejos en interfaces intuitivas usando el ecosistema React, con enfoque en rendimiento y accesibilidad.",
+    "detail1": "3+ años moldeando experiencias digitales",
+    "detail2": "Experto certificado en VTEX & Shopify",
+    "detail3": "Defensor del diseño mobile-first",
+    "detail4": "Contribuidor activo en open-source"
+  },
+  "Experience": {
+    "title": "Trayectoria",
+    "items": {
+      "infracommerce": {
+        "year": "2025-Actual",
+        "role": "Desarrollador Frontend",
+        "company": "Infracommerce",
+        "achievements": []
+      },
+      "blacksip": {
+        "year": "2021-2025",
+        "role": "Desarrollador Frontend",
+        "company": "Blacksip",
+        "achievements": []
+      }
+    }
   }
 }

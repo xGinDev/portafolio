@@ -30,6 +30,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -73,6 +74,7 @@
     opacity: 0;
     transform: translateY(0.625rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -89,6 +91,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -98,11 +101,16 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 1.5rem));
   }
 }
 
 .animate-scroll-horizontal {
-  animation: scroll-horizontal 40s linear infinite;
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+.group:hover .animate-scroll-horizontal {
+  animation-play-state: paused;
 }
