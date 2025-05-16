@@ -1,5 +1,6 @@
 import HeroMain from "@/components/Hero/HeroMain";
 import Projects from "@/components/Projects/Projects";
+import Skills from "@/components/Skills/Skills";
 
 export default async function Index() {
   return (
@@ -7,6 +8,7 @@ export default async function Index() {
       <div className="animate-in flex flex-col gap-10 opacity-0 px-3">
         <HeroMain />
         <Projects />
+        <Skills />
       </div>
     </div>
   );
