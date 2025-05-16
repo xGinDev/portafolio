@@ -11,7 +11,6 @@ const Projects = () => {
     const t = useTranslations("Projects");
     const extendedProjects = [...projects, ...projects];
 
-    // Animaciones
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -29,7 +28,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="flex flex-col gap-6 overflow-hidden w-[85vw] mx-auto py-8">
+        <div className="flex flex-col gap-6 overflow-hidden w-[85vw] md:max-w-7xl mx-auto py-8">
             <motion.h2
                 className="text-3xl font-bold mb-6 px-4 text-center"
                 initial={{ opacity: 0, y: -20 }}

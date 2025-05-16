@@ -13,7 +13,7 @@ import typescript from "../public/skills/ts.png";
 import git from "../public/skills/git.png";
 import github from "../public/skills/github.png";
 import figma from "../public/skills/figma.png";
-import vtex from "../public/skills/vtex.png";
+import vtex from "../public/skills/VTEX.png";
 import shopify from "../public/skills/shopify.png";
 import scrum from "../public/skills/scrum.png";
 
