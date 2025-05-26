@@ -1,7 +1,13 @@
 import haceb from "../public/projects/haceb.png";
 import flexi from "../public/projects/flexi.png";
-import addi from "../public/projects/addi.png";
 import quality from "../public/projects/quality.png";
+import bosi from "../public/projects/bosi.png";
+import calypso from "../public/projects/calypso.png";
+import cef from "../public/projects/cef.png";
+import nosotras from "../public/projects/nosotras.png";
+import recamier from "../public/projects/recamier.png";
+import tbc from "../public/projects/tbc.png";
+import tbm from "../public/projects/tbm.png";
 import html from "../public/skills/html.png";
 import css from "../public/skills/css.svg";
 import js from "../public/skills/javascript.png";
@@ -16,6 +22,7 @@ import figma from "../public/skills/figma.png";
 import vtex from "../public/skills/VTEX.png";
 import shopify from "../public/skills/shopify.png";
 import scrum from "../public/skills/scrum.png";
+import expo from "../public/skills/expo.svg";
 
 export const projects = [
   {
@@ -34,9 +41,39 @@ export const projects = [
     link: "https://www.qualityproducts.com.pe/",
   },
   {
-    title: "Addi",
-    image: addi,
-    link: "https://co.addi.com/",
+    title: "Bosi",
+    image: bosi,
+    link: "https://www.bosi.com.co/",
+  },
+  {
+    title: "Calypso",
+    image: calypso,
+    link: "https://www.tiendascalypso.com/",
+  },
+  {
+    title: "Cuidate en familia",
+    image: cef,
+    link: "https://www.cuidateenfamilia.com/",
+  },
+  {
+    title: "Nosotras",
+    image: nosotras,
+    link: "https://www.tiendanosotras.com/",
+  },
+  {
+    title: "Recamier",
+    image: recamier,
+    link: "https://tiendacolombia.recamier.com/",
+  },
+  {
+    title: "The Bar CO",
+    image: tbc,
+    link: "https://co.thebar.com/",
+  },
+  {
+    title: "The Bar MX",
+    image: tbm,
+    link: "https://www.thebar.com.mx/",
   },
 ];
 
@@ -60,6 +97,11 @@ export const skills = [
     title: "React / Native",
     color: "#61DAFB",
     img: react,
+  },
+  {
+    title: "Expo",
+    color: "#000",
+    img: expo,
   },
   {
     title: "Nativewind",

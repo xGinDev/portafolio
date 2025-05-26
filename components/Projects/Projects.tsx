@@ -16,8 +16,8 @@ const Projects = () => {
         show: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.3
+                staggerChildren: 0.9,
+                delayChildren: 0.9
             }
         }
     };
@@ -28,7 +28,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="flex flex-col gap-6 overflow-hidden w-[85vw] md:max-w-7xl mx-auto py-8">
+        <div className="flex flex-col gap-6 overflow-hidden w-[85vw] md:max-w-7xl mx-auto py-8" id="Projects">
             <motion.h2
                 className="text-3xl font-bold mb-6 px-4 text-center"
                 initial={{ opacity: 0, y: -20 }}
@@ -64,7 +64,6 @@ const Projects = () => {
                                 className="block"
                             >
                                 <div className="rounded-xl relative group cursor-pointer overflow-hidden shadow-lg h-full">
-                                    {/* Imagen del proyecto */}
                                     <div className="relative h-40 md:h-60">
                                         <Image
                                             src={project.image}
@@ -73,11 +72,9 @@ const Projects = () => {
                                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
-                                        {/* Overlay que aparece al hacer hover */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     </div>
 
-                                    {/* Información que aparece al hacer hover */}
                                     <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                         <div className="flex justify-between items-center">
                                             <h3 className="text-xl font-bold text-white">{project.title}</h3>

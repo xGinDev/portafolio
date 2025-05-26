@@ -108,9 +108,13 @@
 }
 
 .animate-scroll-horizontal {
-  animation: scroll-horizontal 30s linear infinite;
+  animation: scroll-horizontal 60s linear infinite;
 }
 
 .group:hover .animate-scroll-horizontal {
   animation-play-state: paused;
+}
+
+html {
+  scroll-behavior: smooth;
 }

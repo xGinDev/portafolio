@@ -4,6 +4,7 @@ import Skills from "@/components/Skills/Skills";
 import { Experience } from "@/components/Experience/Experience";
 import { Contact } from "@/components/Contact/Contact";
 import { About } from "@/components/About/About";
+import MarqueeServices from "@/components/CarrouselText/CarrouselText";
 
 export default async function Index() {
   return (
@@ -11,6 +12,7 @@ export default async function Index() {
       <div className="animate-in flex flex-col gap-10 opacity-0 px-3">
         <HeroMain />
         {/*  <About /> */}
+        <MarqueeServices/>
         <Projects />
         <Skills />
         <Experience />

@@ -8,6 +8,7 @@ import { Providers } from "../providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer/Footer";
+import ButtonsFloating from "@/components/Global/ButtonsFloating";
 
 export default async function LocaleLayout({
   children,
@@ -38,6 +39,7 @@ export default async function LocaleLayout({
               <SpeedInsights />
               <Analytics />
             </main>
+            <ButtonsFloating/>
             <Footer />
           </Providers>
         </NextIntlClientProvider>
