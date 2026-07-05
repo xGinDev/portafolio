@@ -1,7 +1,7 @@
 {
   "Hero": {
-    "titleDescription": "About",
-    "about": "I am a developer based in Colombia - Medellín, focused on creating interactive digital experiences on the web.",
+    "titleDescription": "About me",
+    "about": "My code is the means, but the user experience is the end goal.",
     "scrollDown": "Scroll down"
   },
   "AboutPage": {
@@ -38,5 +38,9 @@
         "achievements": []
       }
     }
+  },
+  "Footer": {
+    "copyright": "© {year} Gin — Portfolio",
+    "builtWith": " — Under the Influence of Creativity"
   }
 }

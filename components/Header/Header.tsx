@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div
       className={`sticky top-0 z-50 transition-colors duration-300 backdrop-blur-lg backdrop-saturate-150 ${
-        isTop ? "bg-transparent" : "bg-foreground/10"
+        isTop ? "bg-transparent" : "bg-foreground/1"
       }`}
     >
       <div className="flex items-center justify-end px-6 py-4 md:max-w-7xl md:mx-auto">

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Bebas_Neue, Poppins } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { useTranslations } from "next-intl";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -11,28 +11,24 @@ const bebas = Bebas_Neue({
   subsets: ["latin"],
 });
 
-const popins = Poppins({
-  weight: "400",
-  subsets: ["latin"],
-});
-
 const HeroMain = () => {
   const t = useTranslations("Hero");
   const text = "front —— end";
   const text2 = "developer";
 
   const letterVariants = {
-    hidden: { opacity: 0.3, y: 20 },
+    hidden: { color: "hsl(var(--muted-foreground))", y: 20, opacity: 0 },
     visible: (i: number) => ({
-      opacity: 0.3,
+      color: "hsl(var(--muted-foreground))",
       y: 0,
+      opacity: 1,
       transition: {
         delay: i * 0.05,
         duration: 0.5,
       },
     }),
     hover: {
-      opacity: 1,
+      color: "hsl(var(--accent))",
       scale: 1.1,
       y: -10,
       transition: { type: "spring", stiffness: 300 },
@@ -43,7 +39,7 @@ const HeroMain = () => {
 
   return (
     <motion.div
-      className="w-full pt-12 lg:p-0"
+      className="w-full pt-12 lg:p-0 px-3 md:px-0 md:max-w-7xl md:mx-auto"
       initial="hidden"
       animate="visible"
     >
@@ -53,7 +49,7 @@ const HeroMain = () => {
         >
           {text.split("").map((char, index) =>
             isDash(char) ? (
-              <span key={index} className="flex opacity-30">
+              <span key={index} className="flex text-muted-foreground/50">
                 {char}
               </span>
             ) : (
@@ -62,9 +58,8 @@ const HeroMain = () => {
                 custom={index}
                 variants={letterVariants}
                 whileHover="hover"
-                className={`flex ${
-                  char === " " ? "pointer-events-none" : "cursor-default"
-                }`}
+                className={`flex ${char === " " ? "pointer-events-none" : "cursor-default"
+                  }`}
               >
                 {char === " " ? <>&nbsp;</> : char}
               </motion.span>
@@ -73,7 +68,7 @@ const HeroMain = () => {
         </div>
 
         <motion.div
-          className="flex flex-wrap items-start gap-8 border-b-2 border-gray pb-16 md:justify-center"
+          className="flex flex-wrap items-start gap-8 pb-16 md:justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
@@ -87,9 +82,8 @@ const HeroMain = () => {
                 custom={index + text.length}
                 variants={letterVariants}
                 whileHover="hover"
-                className={`flex ${
-                  char === " " ? "pointer-events-none" : "cursor-default"
-                }`}
+                className={`flex ${char === " " ? "pointer-events-none" : "cursor-default"
+                  }`}
               >
                 {char === " " ? <>&nbsp;</> : char}
               </motion.span>
@@ -97,15 +91,15 @@ const HeroMain = () => {
           </div>
 
           <motion.div
-            className={`flex flex-col justify-between gap-y-8 lg:text-xl text-gray-700 lg:max-w-[20%] ${popins.className}`}
+            className={`flex flex-col justify-between gap-y-8 lg:max-w-[20%] lg:mt-16`}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.2, type: "spring" }}
           >
             <div>
-              <p>
+              <p className="text-lg">
                 <motion.b
-                  className={`uppercase text-sm ${popins.className}`}
+                  className={`uppercase md:text-sm text-sm text-accent`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.4 }}

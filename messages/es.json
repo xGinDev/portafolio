@@ -1,7 +1,7 @@
 {
   "Hero": {
     "titleDescription": "Acerca de mi",
-    "about": "Soy un desarrollador based en Colombia - Medellín, enfocado en crear experiencias digitales interactivas.",
+    "about": "Mi código es el medio, pero la experiencia del usuario es el fin.",
     "scrollDown": "Desliza hacia abajo"
   },
   "AboutPage": {
@@ -38,5 +38,9 @@
         "achievements": []
       }
     }
+  },
+  "Footer": {
+    "copyright": "© {year} Gin — Portafolio",
+    "builtWith": " — Bajo el efecto de la creatividad"
   }
 }

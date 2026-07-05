@@ -9,6 +9,18 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer/Footer";
 import ButtonsFloating from "@/components/Global/ButtonsFloating";
+import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "John Correa (Gin) — Frontend Developer",
+  description: "Portafolio de John Correa (Gin) — Frontend Developer",
+};
+
+const popins = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default async function LocaleLayout({
   children,
@@ -29,8 +41,8 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body className="bg-background text-foreground min-h-screen">
+    <html lang={locale} suppressHydrationWarning className={popins.className}>
+      <body className="bg-background text-muted-foreground min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <Header />
