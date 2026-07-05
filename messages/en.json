@@ -42,5 +42,27 @@
   "Footer": {
     "copyright": "© {year} Gin — Portfolio",
     "builtWith": " — Under the Influence of Creativity"
+  },
+  "Nav": {
+    "home": {
+      "title": "Home",
+      "href": "#home"
+    },
+    "about": {
+      "title": "About",
+      "href": "#about"
+    },
+    "projects": {
+      "title": "Projects",
+      "href": "#projects"
+    },
+    "skills": {
+      "title": "Skills",
+      "href": "#skills"
+    },
+    "contact": {
+      "title": "Contact",
+      "href": "#contact"
+    }
   }
 }

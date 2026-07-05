@@ -42,5 +42,27 @@
   "Footer": {
     "copyright": "© {year} Gin — Portafolio",
     "builtWith": " — Bajo el efecto de la creatividad"
+  },
+  "Nav": {
+    "home": {
+      "title": "Inicio",
+      "href": "#inicio"
+    },
+    "about": {
+      "title": "Acerca de",
+      "href": "#acerca-de"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "href": "#proyectos"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "href": "#habilidades"
+    },
+    "contact": {
+      "title": "Contacto",
+      "href": "#contacto"
+    }
   }
 }
