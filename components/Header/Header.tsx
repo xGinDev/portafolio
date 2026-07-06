@@ -22,9 +22,13 @@ const Header = () => {
         }`}
     >
       <div className="flex items-center justify-between px-3 lg:px-6 py-4 md:max-w-7xl md:mx-auto">
-        <Logo />
-        <Nav />
-        <LocaleSwitcher />
+        <div className="lg:w-1/3">
+          <Logo />
+        </div>
+        <div className="flex flex-row-reverse items-center justify-between gap-3 lg:flex-row lg:gap-0 lg:w-2/3">
+          <Nav />
+          <LocaleSwitcher />
+        </div>
       </div>
     </div>
   );

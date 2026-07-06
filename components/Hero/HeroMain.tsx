@@ -68,7 +68,7 @@ const HeroMain = () => {
         </div>
 
         <motion.div
-          className="flex flex-wrap items-start gap-8 pb-16 md:justify-center"
+          className="flex flex-wrap items-start gap-8 md:justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}

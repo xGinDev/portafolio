@@ -5,7 +5,14 @@
     "scrollDown": "Desliza hacia abajo"
   },
   "AboutPage": {
-    "title": "Acerca de mi"
+    "title": "Acerca de mi",
+    "labelOne": "Más que",
+    "labelTwo": "líneas de código",
+    "disclamer": "Apasionado por transformar problemas en soluciones simples.",
+    "name": "John Correa (Gin)",
+    "role": "Desarrollador Frontend",
+    "description": "Soy un desarrollador frontend con experiencia en crear interfaces de usuario modernas y responsivas. Me especializo en React, TypeScript y TailwindCSS.",
+    "downloadCV": "Descargar CV"
   },
   "Projects": {
     "title": "Proyectos en los que he participado",
@@ -14,28 +21,35 @@
   "Skills": {
     "title": "Habilidades"
   },
-  "About": {
-    "title": "Artesanía Digital",
-    "description": "Especialista frontend que fusiona expertise técnico con sensibilidad de diseño. Transformo requerimientos complejos en interfaces intuitivas usando el ecosistema React, con enfoque en rendimiento y accesibilidad.",
-    "detail1": "3+ años moldeando experiencias digitales",
-    "detail2": "Experto certificado en VTEX & Shopify",
-    "detail3": "Defensor del diseño mobile-first",
-    "detail4": "Contribuidor activo en open-source"
-  },
   "Experience": {
-    "title": "Trayectoria",
+    "title": "En el camino",
+    "description": "Especializado en JavaScript, TypeScript, React, HTML, CSS, TailwindCSS; con experiencia adicional en plataformas de e-commerce como VTEX IO. Trabajo tanto en soluciones a la medida como en integraciones dentro de plataformas existentes, siempre con foco en la experiencia de usuario. Disfruto compartir conocimiento con mi equipo tanto como aprender de él, y sigo en constante formación para enfrentar nuevos retos técnicos",
     "items": {
       "infracommerce": {
-        "year": "2025-Actual",
+        "year": "2025 - 2026",
         "role": "Desarrollador Frontend",
         "company": "Infracommerce",
-        "achievements": []
+        "description": "Desarrollo de e-commerce desde cero y mantenimiento de sitios en producción, con foco en optimización de rendimiento, SEO técnico y mejoras de usabilidad. Maquetación de landing pages e integraciones con la plataforma y servicios de terceros.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       },
       "blacksip": {
-        "year": "2021-2025",
+        "year": "2021 - 2025",
         "role": "Desarrollador Frontend",
         "company": "Blacksip",
-        "achievements": []
+        "description": "Construcción y optimización continua de tiendas e-commerce, priorizando velocidad de carga, SEO y experiencia de usuario. Desarrollo de landing pages e integraciones entre la plataforma y sistemas externos.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       }
     }
   },
@@ -52,13 +66,13 @@
       "title": "Acerca de",
       "href": "#acerca-de"
     },
-    "projects": {
-      "title": "Proyectos",
-      "href": "#proyectos"
-    },
     "skills": {
       "title": "Habilidades",
       "href": "#habilidades"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "href": "#proyectos"
     },
     "contact": {
       "title": "Contacto",

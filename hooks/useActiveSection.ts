@@ -1,4 +1,3 @@
-// hooks/useActiveSection.ts
 "use client";
 import { useEffect, useState } from "react";
 
@@ -23,7 +22,6 @@ export function useActiveSection(sectionIds: string[]) {
                 }
             },
             {
-                // Franja delgada en el centro del viewport para decidir "activo"
                 rootMargin: "-40% 0px -40% 0px",
                 threshold: [0, 0.25, 0.5, 0.75, 1],
             }

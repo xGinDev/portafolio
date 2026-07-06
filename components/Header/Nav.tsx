@@ -3,7 +3,7 @@ import React from "react";
 import { useMessages } from "next-intl";
 import { cn } from "@/lib/utils";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { IoMdMenu } from "react-icons/io";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 import {
     Drawer,
     DrawerClose,
@@ -35,8 +35,8 @@ const Nav = () => {
     const activeId = useActiveSection(sectionIds);
 
     const linkBaseClasses =
-        "pb-1 text-sm font-medium text-muted-foreground border-b-2 border-transparent transition-colors hover:text-accent";
-    const linkActiveClasses = "text-foreground font-bold border-accent";
+        "pb-1 text-sm font-medium text-muted-foreground border-b-2 border-transparent transition-colors hover:text-accent hover:bg-transparent hover:font-bold hover:border-accent";
+    const linkActiveClasses = "text-foreground font-bold border-accent hover:text-foreground";
 
     return (
         <nav>
@@ -70,12 +70,22 @@ const Nav = () => {
             <div className="lg:hidden">
                 <Drawer direction="right">
                     <DrawerTrigger asChild>
-                        <button className="p-2 text-foreground" aria-label="Abrir menú">
-                            <IoMdMenu size={24} />
+                        <button className="p-2 border border-accent rounded bg-background" aria-label="Abrir menú">
+                            <IoMdMenu size={24} className="text-accent" />
                         </button>
                     </DrawerTrigger>
                     <DrawerContent>
-                        <div className="flex flex-col gap-1 px-4 pb-8">
+                        <DrawerHeader className="flex flex-row items-center justify-end pr-2 py-4 absolute w-full">
+                            <DrawerClose asChild>
+                                <button
+                                    className="rounded-md px-1.5 text-muted-foreground transition-colors hover:text-accent"
+                                    aria-label="Cerrar menú"
+                                >
+                                    <IoMdClose size={22} />
+                                </button>
+                            </DrawerClose>
+                        </DrawerHeader>
+                        <div className="flex flex-col gap-1 px-4 pb-8 mt-8">
                             {Object.entries(navItems).map(([key, item]) => {
                                 const id = item.href.replace("#", "");
                                 const isActive = activeId === id;

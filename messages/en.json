@@ -5,7 +5,14 @@
     "scrollDown": "Scroll down"
   },
   "AboutPage": {
-    "title": "About"
+    "title": "About me",
+    "labelOne": "More than",
+    "labelTwo": "lines of code",
+    "disclamer": "Passionate about transforming problems into simple solutions.",
+    "name": "John Correa (Gin)",
+    "role": "Frontend Developer",
+    "description": "I am a frontend developer with experience in creating modern and responsive user interfaces. I specialize in React, TypeScript and TailwindCSS.",
+    "downloadCV": "Download CV"
   },
   "Projects": {
     "title": "Projects in which I have participated",
@@ -14,28 +21,35 @@
   "Skills": {
     "title": "Skills"
   },
-  "About": {
-    "title": "Digital Craftsmanship",
-    "description": "Frontend specialist merging technical expertise with design sensibility. I transform complex requirements into intuitive interfaces using React ecosystem, with a focus on performance and accessibility.",
-    "detail1": "3+ years shaping digital experiences",
-    "detail2": "VTEX & Shopify certified expert",
-    "detail3": "Mobile-first & responsive design advocate",
-    "detail4": "Active open-source contributor"
-  },
   "Experience": {
-    "title": "Path",
+    "title": "On the way",
+    "description": "Specialized in JavaScript, TypeScript, React, HTML, CSS, TailwindCSS; with additional experience in e-commerce platforms like VTEX IO. I work on both custom solutions and integrations within existing platforms, always focusing on user experience. I enjoy sharing knowledge with my team as much as learning from it, and I keep constantly training to face new technical challenges",
     "items": {
       "infracommerce": {
-        "year": "2025-Present",
+        "year": "2025 - 2026",
         "role": "Frontend Developer",
         "company": "Infracommerce",
-        "achievements": []
+        "description": "Development of e-commerce from scratch and maintenance of sites in production, with a focus on performance optimization, technical SEO and usability improvements. Landing page markup and integrations with the platform and third-party services.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       },
       "blacksip": {
-        "year": "2021-2025",
+        "year": "2021 - 2025",
         "role": "Frontend Developer",
         "company": "Blacksip",
-        "achievements": []
+        "description": "Continuous construction and optimization of e-commerce stores, prioritizing loading speed, SEO and user experience. Development of landing pages and integrations between the platform and external systems.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       }
     }
   },
@@ -52,13 +66,13 @@
       "title": "About",
       "href": "#about"
     },
-    "projects": {
-      "title": "Projects",
-      "href": "#projects"
-    },
     "skills": {
       "title": "Skills",
       "href": "#skills"
+    },
+    "projects": {
+      "title": "Projects",
+      "href": "#projects"
     },
     "contact": {
       "title": "Contact",
