@@ -122,5 +122,33 @@
     "skills": "habilidades",
     "projects": "proyectos",
     "contact": "contacto"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "labelOne": "Hablemos de tu",
+    "labelTwo": "proyecto",
+    "disclamer": "Disponible para proyectos freelance, colaboraciones y oportunidades remotas.",
+    "workTogether": "Trabajemos juntos",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué puedo ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "maxChars": "de 600 caracteres"
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "description": "Gracias por escribirme, te responderé lo antes posible."
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "description": "No pudimos enviar tu mensaje. Intenta de nuevo o escríbeme directo por correo."
+    }
   }
 }

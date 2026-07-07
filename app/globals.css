@@ -12,6 +12,8 @@
     --muted-foreground: 60 2% 35%;
     --accent: 206 85% 35%;
     --accent-foreground: 48 56% 98%;
+    --success: 142 71% 40%;
+    --success-foreground: 144 61% 12%;
     --border: 43 17% 84%;
     --input: 43 17% 84%;
     --ring: 206 85% 35%;
@@ -27,6 +29,8 @@
     --muted-foreground: 240 2% 61%;
     --accent: 202 79% 58%;
     --accent-foreground: 240 7% 5%;
+    --success: 142 69% 52%;
+    --success-foreground: 144 70% 8%;
     --border: 0 0% 15%;
     --input: 0 0% 15%;
     --ring: 202 79% 58%;

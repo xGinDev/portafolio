@@ -5,7 +5,7 @@ import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import profile from "../../public/about/profile.jpeg";
 import Experience from "../Experience/Experience";
-import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import Link from "next/link";
 
 const bebas = Bebas_Neue({
@@ -59,22 +59,50 @@ export const About = () => {
                     />
                     <h3 className="text-lg font-semibold mt-4 text-foreground">{t("name")}</h3>
                     <h4 className="text-sm tracking-widest text-accent">{t("role")}</h4>
-                    <button 
+                    <button
                         className={`mt-4 px-4 py-2 bg-background text-accent border border-accent tracking-wider rounded-lg hover:bg-accent hover:text-background transition-colors`}
                         aria-label={t("downloadCV")}
                     >
                         {t("downloadCV")}
                     </button>
                     <div className="flex items-center gap-1 mt-4">
-                        <Link href={"https://www.linkedin.com/in/jecl29/"} target={"_blank"} aria-label="LinkedIn profile">
-                            <TbBrandLinkedin size={30} />
+                        <Link
+                            href="https://github.com/xGinDev"
+                            target="_blank"
+                            className="flex items-center justify-center w-10 h-10 rounded-lg border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
+                        >
+                            <FiGithub size={18} />
                         </Link>
-                        <Link href={"https://github.com/xGinDev"} target={"_blank"} aria-label="GitHub profile">
-                            <TbBrandGithub size={30} />
+                        <Link
+                            href="https://www.linkedin.com/in/jecl29/"
+                            target="_blank"
+                            className="flex items-center justify-center w-10 h-10 rounded-lg border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
+                        >
+                            <FiLinkedin size={18} />
+                        </Link>
+                        <Link
+                            href="mailto:jecl29@gmail.com"
+                            className="flex items-center justify-center w-10 h-10 rounded-lg border border-border text-muted-foreground hover:border-accent hover:text-accent transition-colors"
+                        >
+                            <FiMail size={18} />
                         </Link>
                     </div>
                 </div>
-                <div className="w-full">
+                <div className="flex flex-col gap-2 w-full">
+                    <motion.div
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-success/30 bg-success/10 w-fit"
+                    >
+                        <span className="relative flex h-2 w-2">
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-success opacity-75 animate-ping" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-success" />
+                        </span>
+                        <span className="text-sm font-medium text-success">
+                            {t("available")}
+                        </span>
+                    </motion.div>
                     <Experience />
                 </div>
             </div>

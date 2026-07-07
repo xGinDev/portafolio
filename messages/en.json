@@ -122,5 +122,33 @@
     "skills": "skills",
     "projects": "projects",
     "contact": "contact"
+  },
+  "Contact": {
+    "title": "Contact",
+    "labelOne": "Let's work on your",
+    "labelTwo": "project",
+    "disclamer": "Available for freelance projects, collaborations, and remote opportunities.",
+    "workTogether": "Let's work together",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can I help you?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "maxChars": "of 600 characters"
+    },
+    "success": {
+      "title": "Message sent!",
+      "description": "Thanks for reaching out, I'll get back to you soon."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We couldn't send your message. Try again or email me directly."
+    }
   }
 }

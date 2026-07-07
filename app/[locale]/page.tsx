@@ -21,6 +21,10 @@ const About = dynamic(() => import("@/components/About/About").then(m => ({ defa
   loading: () => <div className="h-96" />,
 });
 
+const Contact = dynamic(() => import("@/components/Contact/Contact"), {
+  loading: () => <div className="h-96" />,
+});
+
 export default async function Index() {
   return (
     <div className="w-full flex">
@@ -30,10 +34,7 @@ export default async function Index() {
         <About />
         <Skills />
         <Projects />
-        {/*
-        
-        
-        <Contact /> */}
+        <Contact />
       </div>
     </div>
   );
