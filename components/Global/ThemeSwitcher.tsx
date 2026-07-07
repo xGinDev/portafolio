@@ -12,7 +12,10 @@ export function ThemeSwitcher() {
     return null;
   }
   return (
-    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+    <button 
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+    >
       {theme === "dark" ? (
         <MdOutlineModeNight size={24} />
       ) : (

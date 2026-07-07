@@ -16,9 +16,11 @@ const bebas = Bebas_Neue({
 export const About = () => {
     const t = useTranslations("AboutPage");
     const tExperience = useTranslations("Experience");
+    const tAnchors = useTranslations("Anchors");
 
     return (
         <motion.section
+            id={tAnchors("about")}
             className="w-full lg:p-0 px-3 md:px-0 md:max-w-7xl md:mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -50,20 +52,24 @@ export const About = () => {
                     <Image
                         src={profile}
                         alt="Profile"
-                        width={250}
-                        height={250}
+                        width={200}
+                        height={200}
                         className="w-full lg:w-full flex rounded grayscale hover:grayscale-0 transition-all duration-500"
+                        priority
                     />
                     <h3 className="text-lg font-semibold mt-4 text-foreground">{t("name")}</h3>
                     <h4 className="text-sm tracking-widest text-accent">{t("role")}</h4>
-                    <button className={`mt-4 px-4 py-2 bg-background text-accent border border-accent tracking-wider rounded-lg hover:bg-accent hover:text-background transition-colors`}>
+                    <button 
+                        className={`mt-4 px-4 py-2 bg-background text-accent border border-accent tracking-wider rounded-lg hover:bg-accent hover:text-background transition-colors`}
+                        aria-label={t("downloadCV")}
+                    >
                         {t("downloadCV")}
                     </button>
                     <div className="flex items-center gap-1 mt-4">
-                        <Link href={"https://www.linkedin.com/in/jecl29/"} target={"_blank"}>
+                        <Link href={"https://www.linkedin.com/in/jecl29/"} target={"_blank"} aria-label="LinkedIn profile">
                             <TbBrandLinkedin size={30} />
                         </Link>
-                        <Link href={"https://github.com/xGinDev"} target={"_blank"}>
+                        <Link href={"https://github.com/xGinDev"} target={"_blank"} aria-label="GitHub profile">
                             <TbBrandGithub size={30} />
                         </Link>
                     </div>

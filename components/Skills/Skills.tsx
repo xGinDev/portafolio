@@ -13,6 +13,7 @@ const bebas = Bebas_Neue({
 
 const Skills = () => {
     const t = useTranslations("Skills");
+    const tAnchors = useTranslations("Anchors");
     const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
 
     const container = {
@@ -33,7 +34,7 @@ const Skills = () => {
     const IMAGE_SIZE = 32;
 
     return (
-        <div className="flex flex-col gap-6 max-w-5xl mx-auto px-4 py-8">
+        <div id={tAnchors("skills")} className="flex flex-col gap-6 max-w-5xl mx-auto px-4 py-8">
             <div className="flex flex-col justify-center items-center mb-5">
                 <motion.span
                     className={`tracking-wider uppercase text-xl text-accent ${bebas.className} flex items-center gap-2 mb-3`}

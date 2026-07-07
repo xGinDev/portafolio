@@ -46,7 +46,7 @@ export default function LocaleSwitcherSelect({
         isPending && "transition-opacity [&:disabled]:opacity-30"
       )}
     >
-      <AiOutlineGlobal size={24} />
+      <AiOutlineGlobal size={24} aria-hidden="true" />
       <select
         className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6 uppercase focus-visible:outline-none focus-visible:border-none"
         defaultValue={defaultValue}
@@ -55,6 +55,7 @@ export default function LocaleSwitcherSelect({
         onMouseDown={() => setIsOpen(true)}
         onFocus={() => setIsOpen(true)}
         onBlur={() => setIsOpen(false)}
+        aria-label="Select language"
       >
         {children}
       </select>

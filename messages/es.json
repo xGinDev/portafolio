@@ -16,8 +16,20 @@
     "downloadCV": "Descargar CV"
   },
   "Projects": {
-    "title": "Proyectos en los que he participado",
-    "view": "Ver"
+    "title": "Proyectos",
+    "labelOne": "De la idea a",
+    "labelTwo": "producción",
+    "disclamer": "Proyectos reales donde el diseño y la lógica se encuentran.",
+    "featured": {
+      "eyebrow": "Proyecto propio",
+      "description": "Extensión de VS Code que agiliza el desarrollo en VTEX IO con snippets listos para usar — menos código repetitivo, más velocidad al construir componentes.",
+      "ctaMarketplace": "VS Code Marketplace",
+      "ctaGithub": "Ver código",
+      "ctaLanding": "Ver más",
+      "openVsx": "Open VSX"
+    },
+    "clientsEyebrow": "Experiencia",
+    "clientsTitle": "Marcas con las que he trabajado"
   },
   "Skills": {
     "title": "Habilidades",
@@ -105,10 +117,10 @@
     }
   },
   "Anchors": {
-    "home": "Inicio",
-    "about": "Acerca de",
-    "skills": "Habilidades",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "home": "inicio",
+    "about": "acerca-de",
+    "skills": "habilidades",
+    "projects": "proyectos",
+    "contact": "contacto"
   }
 }

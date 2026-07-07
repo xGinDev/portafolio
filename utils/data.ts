@@ -29,57 +29,29 @@ import claude from "../public/skills/claude.webp";
 import claudeCode from "../public/skills/claudecode.webp";
 
 export const projects = [
-  {
-    title: "Haceb",
-    image: haceb,
-    link: "https://www.haceb.com/",
-  },
-  {
-    title: "Flexi Colombia",
-    image: flexi,
-    link: "https://www.flexicolombia.com/",
-  },
-  {
-    title: "Quality Products",
-    image: quality,
-    link: "https://www.qualityproducts.com.pe/",
-  },
-  {
-    title: "Bosi",
-    image: bosi,
-    link: "https://www.bosi.com.co/",
-  },
-  {
-    title: "Calypso",
-    image: calypso,
-    link: "https://www.tiendascalypso.com/",
-  },
-  {
-    title: "Cuidate en familia",
-    image: cef,
-    link: "https://www.cuidateenfamilia.com/",
-  },
-  {
-    title: "Nosotras",
-    image: nosotras,
-    link: "https://www.tiendanosotras.com/",
-  },
-  {
-    title: "Recamier",
-    image: recamier,
-    link: "https://tiendacolombia.recamier.com/",
-  },
-  {
-    title: "The Bar CO",
-    image: tbc,
-    link: "https://co.thebar.com/",
-  },
-  {
-    title: "The Bar MX",
-    image: tbm,
-    link: "https://www.thebar.com.mx/",
-  },
+  { title: "Haceb", image: haceb, link: "https://www.haceb.com/" },
+  { title: "Flexi Colombia", image: flexi, link: "https://www.flexicolombia.com/" },
+  { title: "Quality Products", image: quality, link: "https://www.qualityproducts.com.pe/" },
+  { title: "Bosi", image: bosi, link: "https://www.bosi.com.co/" },
+  { title: "Calypso", image: calypso, link: "https://www.tiendascalypso.com/" },
+  { title: "Cuidate en familia", image: cef, link: "https://www.cuidateenfamilia.com/" },
+  { title: "Nosotras", image: nosotras, link: "https://www.tiendanosotras.com/" },
+  { title: "Recamier", image: recamier, link: "https://tiendacolombia.recamier.com/" },
+  { title: "The Bar CO", image: tbc, link: "https://co.thebar.com/" },
+  { title: "The Bar MX", image: tbm, link: "https://www.thebar.com.mx/" },
 ];
+
+export const featuredProject = {
+  title: "VTEX Snippets IO",
+  tags: ["VTEX IO", "VS Code Extension", "Developer Tools"],
+  links: {
+    marketplace:
+      "https://marketplace.visualstudio.com/items?itemName=xGinDev.vtex-snippet-io",
+    openVsx: "https://open-vsx.org/extension/xGinDev/vtex-snippet-io",
+    github: "https://github.com/xGinDev/vtex-snippets",
+  },
+  landingHref: "/tools/vtex-snippets",
+};
 
 export const skills = [
   {

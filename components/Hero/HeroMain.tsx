@@ -24,8 +24,8 @@ const HeroMain = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.05,
-        duration: 0.5,
+        delay: i * 0.03,
+        duration: 0.3,
       },
     }),
     hover: {
@@ -73,7 +73,7 @@ const HeroMain = () => {
           className="flex flex-wrap items-start gap-8 md:justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.4 }}
         >
           <div
             className={`flex flex-wrap uppercase text-[37vw] leading-[30vw] lg:text-[280px] lg:leading-[18vw] ${bebas.className}`}
@@ -96,7 +96,7 @@ const HeroMain = () => {
             className={`flex flex-col justify-between gap-y-8 lg:max-w-[20%] lg:mt-16`}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, type: "spring" }}
+            transition={{ delay: 0.6, type: "spring" }}
           >
             <div>
               <p className="text-lg">
@@ -104,7 +104,7 @@ const HeroMain = () => {
                   className={`uppercase md:text-sm text-sm text-accent`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 1.4 }}
+                  transition={{ delay: 0.7 }}
                 >
                   {t("titleDescription")}
                 </motion.b>{" "}
@@ -112,12 +112,12 @@ const HeroMain = () => {
               </p>
             </div>
 
-            <Link href={"#Projects"} scroll={true}>
+            <Link href={"#Projects"} scroll={true} aria-label={t("scrollDown")}>
               <motion.div
                 className="hidden lg:flex items-center justify-between"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.6 }}
+                transition={{ delay: 0.8 }}
               >
                 <p>{t("scrollDown")}</p>
                 <motion.div

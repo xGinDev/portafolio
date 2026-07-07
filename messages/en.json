@@ -16,8 +16,20 @@
     "downloadCV": "Download CV"
   },
   "Projects": {
-    "title": "Projects in which I have participated",
-    "view": "View"
+    "title": "Projects",
+    "labelOne": "From idea to",
+    "labelTwo": "production",
+    "disclamer": "Real projects where design and logic meet.",
+    "featured": {
+      "eyebrow": "Personal project",
+      "description": "VS Code extension that speeds up VTEX IO development with ready-to-use snippets — less boilerplate, faster component building.",
+      "ctaMarketplace": "VS Code Marketplace",
+      "ctaGithub": "View code",
+      "ctaLanding": "Learn more",
+      "openVsx": "Open VSX"
+    },
+    "clientsEyebrow": "Experience",
+    "clientsTitle": "Brands I've worked with"
   },
   "Skills": {
     "title": "Skills",
@@ -105,10 +117,10 @@
     }
   },
   "Anchors": {
-    "home": "Home",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact"
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "projects": "projects",
+    "contact": "contact"
   }
 }
