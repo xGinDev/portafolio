@@ -10,13 +10,21 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import { Bebas_Neue } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 interface ParallaxProps {
   children: string;
   baseVelocity: number;
+  variant?: "solid" | "muted";
 }
 
-function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
+function ParallaxText({ children, baseVelocity = 100, variant = "solid" }: ParallaxProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -46,15 +54,34 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   });
 
   return (
-    <div className="overflow-hidden whitespace-nowrap flex xl:max-w-7xl">
+    <div
+      className="overflow-hidden whitespace-nowrap flex"
+      style={{
+        maskImage:
+          "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+        WebkitMaskImage:
+          "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+      }}
+    >
       <motion.div
-        className="font-bold uppercase text-[64px] tracking-[-0.1em] leading-[0.8] flex whitespace-nowrap"
+        aria-hidden="true"
+        className={cn(
+          bebas.className,
+          "uppercase flex whitespace-nowrap items-baseline",
+          "text-[32px] sm:text-[42px] lg:text-[56px]",
+          "tracking-wide leading-none",
+          variant === "solid" ? "text-foreground" : "text-muted-foreground"
+        )}
         style={{ x }}
       >
-        <span className="mr-12">{children}</span>
-        <span className="mr-12">{children}</span>
-        <span className="mr-12">{children}</span>
-        <span className="mr-12">{children}</span>
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span key={i} className="flex items-baseline">
+            {children}
+            <span className="text-accent mx-8 text-[0.5em] tracking-normal">
+              //
+            </span>
+          </span>
+        ))}
       </motion.div>
     </div>
   );
@@ -62,11 +89,13 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function MarqueeSection() {
   return (
-    <section className="relative bg-[var(--purple)] text-[var(--accent)] max-w-[90vw] w-full">
-      <ParallaxText baseVelocity={-5}>
-        Frontend Mobile UI/UX
+    <section className="relative w-full border-y border-border py-5 flex flex-col gap-1 bg-secondary/40">
+      <ParallaxText baseVelocity={-5} variant="solid">
+        React — Next.js — TypeScript — TailwindCSS — ReactNative — CSS
       </ParallaxText>
-      <ParallaxText baseVelocity={5}>React Tailwind</ParallaxText>
+      <ParallaxText baseVelocity={5} variant="muted">
+        Git — VTEX — Figma — Shopify — Expo — Scrum
+      </ParallaxText>
     </section>
   );
 }

@@ -1,42 +1,154 @@
 {
   "Hero": {
-    "titleDescription": "About",
-    "about": "I am a developer based in Colombia - Medellín, focused on creating interactive digital experiences on the web.",
+    "titleDescription": "About me",
+    "about": "My code is the means, but the user experience is the end goal.",
     "scrollDown": "Scroll down"
   },
   "AboutPage": {
-    "title": "About"
+    "title": "About me",
+    "available": "Available for projects",
+    "labelOne": "More than",
+    "labelTwo": "lines of code",
+    "disclamer": "Passionate about transforming problems into simple solutions.",
+    "name": "John Correa (Gin)",
+    "role": "Frontend Developer",
+    "description": "I am a frontend developer with experience in creating modern and responsive user interfaces. I specialize in React, TypeScript and TailwindCSS.",
+    "downloadCV": "Download CV"
   },
   "Projects": {
-    "title": "Projects in which I have participated",
-    "view": "View"
+    "title": "Projects",
+    "labelOne": "From idea to",
+    "labelTwo": "production",
+    "disclamer": "Real projects where design and logic meet.",
+    "featured": {
+      "eyebrow": "Personal project",
+      "description": "VS Code extension that speeds up VTEX IO development with ready-to-use snippets — less boilerplate, faster component building.",
+      "ctaMarketplace": "VS Code Marketplace",
+      "ctaGithub": "View code",
+      "ctaLanding": "Learn more",
+      "openVsx": "Open VSX"
+    },
+    "clientsEyebrow": "Experience",
+    "clientsTitle": "Brands I've worked with"
   },
   "Skills": {
-    "title": "Skills"
-  },
-  "About": {
-    "title": "Digital Craftsmanship",
-    "description": "Frontend specialist merging technical expertise with design sensibility. I transform complex requirements into intuitive interfaces using React ecosystem, with a focus on performance and accessibility.",
-    "detail1": "3+ years shaping digital experiences",
-    "detail2": "VTEX & Shopify certified expert",
-    "detail3": "Mobile-first & responsive design advocate",
-    "detail4": "Active open-source contributor"
+    "title": "Skills",
+    "labelOne": "Tool",
+    "labelTwo": "Kits",
+    "disclamer": "What I use every day to turn an idea into something that works in production.",
+    "items": {
+      "html": "Semantic, accessible structure for the web",
+      "css": "Styling, layout, and responsive design",
+      "javascript": "Dynamic interfaces, logic and browser tooling",
+      "react": "Reactive interfaces for web and mobile",
+      "expo": "Building and shipping cross-platform mobile apps",
+      "nativewind": "Utility-first styling for React Native",
+      "nextjs": "Hybrid rendering, routing and full-stack optimization",
+      "typescript": "Static typing for safer, maintainable code",
+      "tailwind": "Utility-first styling for rapid development",
+      "scss": "Modular styling with variables and nesting",
+      "graphql": "Efficient data queries between client and server",
+      "git": "Version control and collaborative development",
+      "github": "Code hosting, CI/CD and team collaboration",
+      "figma": "Interface design and collaborative prototyping",
+      "vtex": "Headless e-commerce and platform development",
+      "shopify": "Customizable, scalable online stores",
+      "scrum": "Agile methodology for iterative value delivery",
+      "claude": "AI assistant for thinking, writing and problem-solving",
+      "claudeCode": "AI-assisted development straight from the terminal"
+    }
   },
   "Experience": {
-    "title": "Path",
+    "title": "On the way",
+    "description": "Specialized in JavaScript, TypeScript, React, HTML, CSS, TailwindCSS; with additional experience in e-commerce platforms like VTEX IO. I work on both custom solutions and integrations within existing platforms, always focusing on user experience. I enjoy sharing knowledge with my team as much as learning from it, and I keep constantly training to face new technical challenges",
     "items": {
       "infracommerce": {
-        "year": "2025-Present",
+        "year": "2025 - 2026",
         "role": "Frontend Developer",
         "company": "Infracommerce",
-        "achievements": []
+        "description": "Development of e-commerce from scratch and maintenance of sites in production, with a focus on performance optimization, technical SEO and usability improvements. Landing page markup and integrations with the platform and third-party services.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       },
       "blacksip": {
-        "year": "2021-2025",
+        "year": "2021 - 2025",
         "role": "Frontend Developer",
         "company": "Blacksip",
-        "achievements": []
+        "description": "Continuous construction and optimization of e-commerce stores, prioritizing loading speed, SEO and user experience. Development of landing pages and integrations between the platform and external systems.",
+        "achievements": [
+          "React",
+          "TypeScript",
+          "CSS",
+          "VTEX",
+          "Node"
+        ]
       }
+    }
+  },
+  "Footer": {
+    "copyright": "© {year} Gin — Portfolio",
+    "builtWith": " — Under the Influence of Creativity"
+  },
+  "Nav": {
+    "home": {
+      "title": "Home",
+      "href": "#home"
+    },
+    "about": {
+      "title": "About",
+      "href": "#about"
+    },
+    "skills": {
+      "title": "Skills",
+      "href": "#skills"
+    },
+    "projects": {
+      "title": "Projects",
+      "href": "#projects"
+    },
+    "contact": {
+      "title": "Contact",
+      "href": "#contact"
+    }
+  },
+  "Anchors": {
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "Contact": {
+    "title": "Contact",
+    "labelOne": "Let's work on your",
+    "labelTwo": "project",
+    "disclamer": "Available for freelance projects, collaborations, and remote opportunities.",
+    "workTogether": "Let's work together",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can I help you?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "maxChars": "of 600 characters"
+    },
+    "success": {
+      "title": "Message sent!",
+      "description": "Thanks for reaching out, I'll get back to you soon."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We couldn't send your message. Try again or email me directly."
     }
   }
 }

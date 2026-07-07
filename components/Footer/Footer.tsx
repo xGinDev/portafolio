@@ -1,11 +1,15 @@
 'use client'
 import React from 'react'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
+    const t = useTranslations('Footer')
     return (
-        <div className='p-4 mt-6 bg-black text-white dark:bg-white dark:text-black md:max-w-7xl md:mx-auto'>
-            <div className='flex justify-center'>
-                <p>© {new Date().getFullYear()} xGinDev. All rights reserved.</p>
+        <div className='flex px-3 border-t border-accent/40 mt-4'>
+            <div className="flex flex-col lg:flex-row py-4 w-full lg:max-w-7xl lg:mx-auto">
+                <div className='lg:inline-flex items-center gap-2'>
+                    <p className='text-base text-accent'>{t('copyright', { year: new Date().getFullYear() })} <span className='text-sm text-muted-foreground'>{t('builtWith')}</span></p>
+                </div>
             </div>
         </div>
     )

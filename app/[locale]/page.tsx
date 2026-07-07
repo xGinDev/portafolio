@@ -1,20 +1,40 @@
-import HeroMain from "@/components/Hero/HeroMain";
-import Projects from "@/components/Projects/Projects";
-import Skills from "@/components/Skills/Skills";
-import { Experience } from "@/components/Experience/Experience";
-import MarqueeServices from "@/components/CarrouselText/CarrouselText";
+import dynamic from "next/dynamic";
+
+const HeroMain = dynamic(() => import("@/components/Hero/HeroMain"), {
+  loading: () => <div className="h-screen" />,
+});
+
+const Projects = dynamic(() => import("@/components/Projects/Projects"), {
+  loading: () => <div className="h-96" />,
+});
+
+const Skills = dynamic(() => import("@/components/Skills/Skills"), {
+  loading: () => <div className="h-96" />,
+});
+
+const MarqueeServices = dynamic(
+  () => import("@/components/CarrouselText/CarrouselText"),
+  { loading: () => <div className="h-20" /> }
+);
+
+const About = dynamic(() => import("@/components/About/About").then(m => ({ default: m.About })), {
+  loading: () => <div className="h-96" />,
+});
+
+const Contact = dynamic(() => import("@/components/Contact/Contact"), {
+  loading: () => <div className="h-96" />,
+});
 
 export default async function Index() {
   return (
-    <div className="w-full flex md:max-w-7xl md:mx-auto">
-      <div className="animate-in flex flex-col gap-10 opacity-0 px-3">
+    <div className="w-full flex">
+      <div className="animate-in flex flex-col gap-4 lg:gap-8 opacity-0 w-full">
         <HeroMain />
-        {/*  <About /> */}
-        <MarqueeServices/>
-        <Projects />
+        <MarqueeServices />
+        <About />
         <Skills />
-        <Experience />
-        {/* <Contact /> */}
+        <Projects />
+        <Contact />
       </div>
     </div>
   );

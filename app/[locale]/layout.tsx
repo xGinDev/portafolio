@@ -2,13 +2,40 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/Header/Header";
+import dynamic from "next/dynamic";
 import "@/app/globals.css";
 import { Providers } from "../providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import Footer from "@/components/Footer/Footer";
-import ButtonsFloating from "@/components/Global/ButtonsFloating";
+import { Metadata } from "next";
+import { Poppins } from "next/font/google";
+
+const Header = dynamic(() => import("@/components/Header/Header"), {
+  ssr: true,
+});
+
+const Footer = dynamic(() => import("@/components/Footer/Footer"), {
+  ssr: true,
+});
+
+const ButtonsFloating = dynamic(() => import("@/components/Global/ButtonsFloating"));
+
+export const metadata: Metadata = {
+  title: "John Correa (Gin) — Frontend Developer",
+  description: "Portafolio de John Correa (Gin) — Frontend Developer",
+  icons: {
+    icon: '/favicon.ico',
+  },
+  other: {
+    'preconnect': 'https://fonts.googleapis.com,https://fonts.gstatic.com',
+  },
+};
+
+const popins = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default async function LocaleLayout({
   children,
@@ -29,8 +56,8 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body className="bg-background text-foreground min-h-screen">
+    <html lang={locale} suppressHydrationWarning className={popins.className}>
+      <body className="bg-background text-muted-foreground min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <Header />
@@ -39,7 +66,7 @@ export default async function LocaleLayout({
               <SpeedInsights />
               <Analytics />
             </main>
-            <ButtonsFloating/>
+            <ButtonsFloating />
             <Footer />
           </Providers>
         </NextIntlClientProvider>
