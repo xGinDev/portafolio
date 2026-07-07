@@ -23,6 +23,10 @@ import vtex from "../public/skills/VTEX.png";
 import shopify from "../public/skills/shopify.png";
 import scrum from "../public/skills/scrum.png";
 import expo from "../public/skills/expo.svg";
+import scss from "../public/skills/sass.svg";
+import graphql from "../public/skills/graphql.png";
+import claude from "../public/skills/claude.webp";
+import claudeCode from "../public/skills/claudecode.webp";
 
 export const projects = [
   {
@@ -79,78 +83,117 @@ export const projects = [
 
 export const skills = [
   {
+    key: "html",
     title: "HTML",
     color: "#E34F26",
     img: html,
   },
   {
+    key: "css",
     title: "CSS",
     color: "#1572B6",
     img: css,
   },
   {
+    key: "javascript",
     title: "JavaScript",
     color: "#F7DF1E",
     img: js,
   },
   {
+    key: "react",
     title: "React / Native",
     color: "#61DAFB",
     img: react,
   },
   {
+    key: "expo",
     title: "Expo",
     color: "#000",
     img: expo,
   },
   {
+    key: "nativewind",
     title: "Nativewind",
     color: "#06B6D4",
     img: natwind,
   },
   {
+    key: "nextjs",
     title: "Next.js",
     color: "#000000",
     img: nextjs,
   },
   {
+    key: "typescript",
     title: "TypeScript",
     color: "#3178C6",
     img: typescript,
   },
   {
+    key: "tailwind",
     title: "Tailwind CSS",
     color: "#06B6D4",
     img: tailwind,
   },
   {
+    key: "scss",
+    title: "SCSS",
+    color: "#CC6699",
+    img: scss,
+  },
+  {
+    key: "graphql",
+    title: "GraphQL",
+    color: "#E10098",
+    img: graphql,
+  },
+  {
+    key: "git",
     title: "Git",
     color: "#F05032",
     img: git,
   },
   {
+    key: "github",
     title: "GitHub",
     color: "#181717",
     img: github,
   },
   {
+    key: "figma",
     title: "Figma",
     color: "#F24E1E",
     img: figma,
   },
   {
+    key: "vtex",
     title: "VTEX IO / Legacy",
     color: "#ED1250",
     img: vtex,
   },
   {
+    key: "shopify",
     title: "Shopify",
     color: "#7AB55C",
     img: shopify,
   },
   {
+    key: "scrum",
     title: "Scrum",
     color: "#009DDC",
     img: scrum,
+  },
+  {
+    key: "claude",
+    title: "Claude",
+    color: "#D97757",
+    img: claude,
+  },
+  {
+    key: "claudeCode",
+    title: "Claude Code",
+    color: "#D97757",
+    img: claudeCode,
   },
 ];

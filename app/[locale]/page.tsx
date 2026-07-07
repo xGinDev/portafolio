@@ -12,8 +12,9 @@ export default async function Index() {
         <HeroMain />
         <MarqueeServices />
         <About />
-        {/*<Projects />
         <Skills />
+        {/*<Projects />
+        
         
         <Contact /> */}
       </div>

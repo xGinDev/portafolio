@@ -6,6 +6,7 @@
   },
   "AboutPage": {
     "title": "Acerca de mi",
+    "available": "Disponible para proyectos",
     "labelOne": "Más que",
     "labelTwo": "líneas de código",
     "disclamer": "Apasionado por transformar problemas en soluciones simples.",
@@ -19,7 +20,31 @@
     "view": "Ver"
   },
   "Skills": {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "labelOne": "Caja de",
+    "labelTwo": "herramientas",
+    "disclamer": "Lo que uso todos los días para pasar de una idea a algo que funciona en producción.",
+    "items": {
+      "html": "Estructura semántica y accesible para la web",
+      "css": "Estilos, layout y diseño responsivo",
+      "javascript": "Interfaces dinámicas, lógica y manejo del navegador",
+      "react": "Interfaces reactivas para web y móvil",
+      "expo": "Desarrollo y despliegue de apps móviles multiplataforma",
+      "nativewind": "Estilos utility-first para React Native",
+      "nextjs": "Renderizado híbrido, rutas y optimización full-stack",
+      "typescript": "Tipado estático para código más seguro y mantenible",
+      "tailwind": "Estilos utility-first para desarrollo ágil",
+      "scss": "Estilos modulares con variables y anidamiento",
+      "graphql": "Consultas eficientes de datos entre cliente y servidor",
+      "git": "Control de versiones y desarrollo colaborativo",
+      "github": "Alojamiento de código, CI/CD y trabajo en equipo",
+      "figma": "Diseño de interfaces y prototipado colaborativo",
+      "vtex": "E-commerce headless y desarrollo sobre plataforma",
+      "shopify": "Tiendas online personalizables y escalables",
+      "scrum": "Metodología ágil para entrega iterativa de valor",
+      "claude": "Asistente de IA para pensar, escribir y resolver problemas",
+      "claudeCode": "Desarrollo asistido por IA directo en la terminal"
+    }
   },
   "Experience": {
     "title": "En el camino",
@@ -78,5 +103,12 @@
       "title": "Contacto",
       "href": "#contacto"
     }
+  },
+  "Anchors": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
   }
 }

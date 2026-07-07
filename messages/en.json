@@ -6,6 +6,7 @@
   },
   "AboutPage": {
     "title": "About me",
+    "available": "Available for projects",
     "labelOne": "More than",
     "labelTwo": "lines of code",
     "disclamer": "Passionate about transforming problems into simple solutions.",
@@ -19,7 +20,31 @@
     "view": "View"
   },
   "Skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "labelOne": "Tool",
+    "labelTwo": "Kits",
+    "disclamer": "What I use every day to turn an idea into something that works in production.",
+    "items": {
+      "html": "Semantic, accessible structure for the web",
+      "css": "Styling, layout, and responsive design",
+      "javascript": "Dynamic interfaces, logic and browser tooling",
+      "react": "Reactive interfaces for web and mobile",
+      "expo": "Building and shipping cross-platform mobile apps",
+      "nativewind": "Utility-first styling for React Native",
+      "nextjs": "Hybrid rendering, routing and full-stack optimization",
+      "typescript": "Static typing for safer, maintainable code",
+      "tailwind": "Utility-first styling for rapid development",
+      "scss": "Modular styling with variables and nesting",
+      "graphql": "Efficient data queries between client and server",
+      "git": "Version control and collaborative development",
+      "github": "Code hosting, CI/CD and team collaboration",
+      "figma": "Interface design and collaborative prototyping",
+      "vtex": "Headless e-commerce and platform development",
+      "shopify": "Customizable, scalable online stores",
+      "scrum": "Agile methodology for iterative value delivery",
+      "claude": "AI assistant for thinking, writing and problem-solving",
+      "claudeCode": "AI-assisted development straight from the terminal"
+    }
   },
   "Experience": {
     "title": "On the way",
@@ -78,5 +103,12 @@
       "title": "Contact",
       "href": "#contact"
     }
+  },
+  "Anchors": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
   }
 }

@@ -13,6 +13,7 @@ const bebas = Bebas_Neue({
 
 const HeroMain = () => {
   const t = useTranslations("Hero");
+  const tAnchors = useTranslations("Anchors");
   const text = "front —— end";
   const text2 = "developer";
 
@@ -42,6 +43,7 @@ const HeroMain = () => {
       className="w-full pt-12 lg:p-0 px-3 md:px-0 md:max-w-7xl md:mx-auto"
       initial="hidden"
       animate="visible"
+      id={tAnchors("home")}
     >
       <div className="flex flex-col justify-center">
         <div
