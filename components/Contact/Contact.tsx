@@ -18,6 +18,7 @@ type FormStatus = "idle" | "success" | "error";
 
 export const Contact = () => {
     const t = useTranslations("Contact");
+    const tAnchors = useTranslations("Anchors");
     const [message, setMessage] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [status, setStatus] = useState<FormStatus>("idle");
@@ -71,6 +72,7 @@ export const Contact = () => {
 
     return (
         <motion.section
+            id={tAnchors("contact")}
             className="w-full lg:p-0 px-3 md:px-0 md:max-w-7xl md:mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

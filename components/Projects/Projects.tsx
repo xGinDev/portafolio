@@ -149,14 +149,14 @@ const Projects = () => {
                         {t("featured.ctaGithub")}
                     </Link>
 
-                    <Link
+                    {/*                     <Link
                         href={featuredProject.landingHref}
                         className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg bg-accent text-accent-foreground hover:opacity-90 transition-opacity ml-auto"
                         aria-label={t("featured.ctaLanding")}
                     >
                         {t("featured.ctaLanding")}
                         <FiArrowUpRight size={16} />
-                    </Link>
+                    </Link> */}
                 </div>
             </motion.div>
 

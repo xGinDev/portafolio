@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import profile from "../../public/about/profile.jpeg";
@@ -13,10 +13,20 @@ const bebas = Bebas_Neue({
     subsets: ["latin"],
 });
 
+const CV_FILES: Record<string, string> = {
+    es: "/cv/CV_John_Correa.pdf",
+    en: "/cv/John_Correa_Resume.pdf",
+};
+
+
 export const About = () => {
     const t = useTranslations("AboutPage");
     const tExperience = useTranslations("Experience");
     const tAnchors = useTranslations("Anchors");
+
+    const locale = useLocale();
+
+    const cvHref = CV_FILES[locale] ?? CV_FILES.es;
 
     return (
         <motion.section
@@ -59,12 +69,16 @@ export const About = () => {
                     />
                     <h3 className="text-lg font-semibold mt-4 text-foreground">{t("name")}</h3>
                     <h4 className="text-sm tracking-widest text-accent">{t("role")}</h4>
-                    <button
-                        className={`mt-4 px-4 py-2 bg-background text-accent border border-accent tracking-wider rounded-lg hover:bg-accent hover:text-background transition-colors`}
+                    <Link
+                        href={cvHref}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 px-4 py-2 bg-background text-accent border border-accent tracking-wider rounded-lg hover:bg-accent hover:text-background transition-colors text-center"
                         aria-label={t("downloadCV")}
                     >
                         {t("downloadCV")}
-                    </button>
+                    </Link>
                     <div className="flex items-center gap-1 mt-4">
                         <Link
                             href="https://github.com/xGinDev"

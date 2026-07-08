@@ -8,6 +8,10 @@ import nosotras from "../public/projects/nosotras.png";
 import recamier from "../public/projects/recamier.png";
 import tbc from "../public/projects/tbc.png";
 import tbm from "../public/projects/tbm.png";
+import alfa from "../public/projects/alfa.png";
+import bellapiel from "../public/projects/bella-piel.png";
+import blushbar from "../public/projects/blush-bar.png";
+import liliana from "../public/projects/liliana.png";
 import html from "../public/skills/html.png";
 import css from "../public/skills/css.svg";
 import js from "../public/skills/javascript.png";
@@ -29,6 +33,10 @@ import claude from "../public/skills/claude.webp";
 import claudeCode from "../public/skills/claudecode.webp";
 
 export const projects = [
+  { title: "Bella Piel", image: bellapiel, link: "https://www.bellapiel.com.co/" },
+  { title: "Blush Bar", image: blushbar, link: "https://www.blush-bar.com/" },
+  { title: "Liliana", image: liliana, link: "https://www.liliana.com.ar/" },
+  { title: "Alfa", image: alfa, link: "https://www.alfa.com.co/" },
   { title: "Haceb", image: haceb, link: "https://www.haceb.com/" },
   { title: "Flexi Colombia", image: flexi, link: "https://www.flexicolombia.com/" },
   { title: "Quality Products", image: quality, link: "https://www.qualityproducts.com.pe/" },
@@ -38,7 +46,7 @@ export const projects = [
   { title: "Nosotras", image: nosotras, link: "https://www.tiendanosotras.com/" },
   { title: "Recamier", image: recamier, link: "https://tiendacolombia.recamier.com/" },
   { title: "The Bar CO", image: tbc, link: "https://co.thebar.com/" },
-  { title: "The Bar MX", image: tbm, link: "https://www.thebar.com.mx/" },
+  { title: "The Bar MX", image: tbm, link: "https://www.thebar.com.mx/" }
 ];
 
 export const featuredProject = {
